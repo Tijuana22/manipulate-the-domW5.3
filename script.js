@@ -17,18 +17,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Do all of your work inside the document.addEventListener  
 
   // Part 1
-
-
+ document.querySelector("#main-title")
+ .textContent ="I'm DOM Toretto, Welcome to my page.";
+ 
   // Part 2
-
-
+  document.querySelector("body")
+  .style.backgroundColor = "blue";
+  
   // Part 3
-
+  let favoriteThings =document.querySelectorAll("#favorite-things > li")
+  favoriteThings =document.querySelector("li:last-child");
+  favoriteThings.remove()
 
   // Part 4
+  let specialTitle =document.querySelectorAll(".special-title")
+  specialTitle.forEach((item) =>{
+    item.style.fontSize = "2rem"
 
-
+  })
   // Part 5
+  let pastRaces =document.querySelectorAll("#past-races > li")
+  pastRaces =document.querySelectorAll;
+  
 
 
   // Part 6
