@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function(evt) {
   // Part 7
   let blogPost =document.createElement("div")
   blogPost.classList.add("blog-post")
-  blogPost.style.backgroundColor = "rebeccapurple"
+  blogPost.classList.add = ("purple")
 
   let heading =document.createElement("h2")
   heading.innerHTML = "Baja Mexico"
@@ -65,8 +65,12 @@ document.addEventListener("DOMContentLoaded", function(evt) {
 
 
   let pEl =document.createElement("p")
-  pEl.innerHTML = "I ESCAPED L.A TO MEXICO, WHERE I DROVE MY RED CHEVELLE"
+  pEl.innerHTML = "I ESCAPED L.A TO MEXICO, WHERE I DROVE MY RED CHEVELLE!"
   pEl.style.fontSize = "1.5rem"
+
+  
+
+
 
   document.querySelector(".main").appendChild(blogPost)
   blogPost.appendChild(heading)
