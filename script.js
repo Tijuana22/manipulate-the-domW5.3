@@ -55,10 +55,18 @@ document.addEventListener("DOMContentLoaded", function(evt) {
   // Part 7
   let blogPost =document.createElement("div")
   blogPost.classList.add("blog-post")
+  blogPost.style.backgroundColor = "rebeccapurple"
+
   let heading =document.createElement("h2")
   heading.innerHTML = "Baja Mexico"
+  heading.style.color = "#FFF"
+  heading.style.marginBottom = "3rem"
+  heading.style.fontSize = "2em"
+
+
   let pEl =document.createElement("p")
-  pEl.innerHTML = "I escaped L.A to Mexico, where I drove my red Chevelle"
+  pEl.innerHTML = "I ESCAPED L.A TO MEXICO, WHERE I DROVE MY RED CHEVELLE"
+  pEl.style.fontSize = "1.5rem"
 
   document.querySelector(".main").appendChild(blogPost)
   blogPost.appendChild(heading)
@@ -71,7 +79,8 @@ document.addEventListener("DOMContentLoaded", function(evt) {
   randomQuote()
   }) 
   // Part 9
-document.querySelector(".blog-post").forEach((item) => {
+  document.querySelectorAll(".blog-post")
+  .forEach((item) => {
   item.addEventListener("mouseout",(evt) =>{
     evt.currentTarget.classList.toggle('purple')
   })
